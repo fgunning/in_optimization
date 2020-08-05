@@ -1,8 +1,8 @@
 import json, requests, tableauserverclient as TSC, pandas as pd, re
 #Tableau Server variables
-ts_url = 'https://demo.tableau.com'
-ts_site = 'Fearghal'
-tableau_auth = TSC.TableauAuth('fgunning', 'password', ts_site)
+ts_url = <ts_url_no_trailing_slash>
+ts_site = <site url>
+tableau_auth = TSC.TableauAuth(<username>, <password>, ts_site)
 server = TSC.Server(ts_url)
 #query for the metadata API
 mdapi_query = '''query calcs {
